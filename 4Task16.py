@@ -4,7 +4,7 @@ fil = open("/home/jaisaibaba236/Desktop/words.txt")
 word_dictionary = dict()
 inverse = dict()
 
-def search_key(fil):
+def dictionary(fil):
   for i in fil:
     word_dictionary[i.strip()] = random.random()
   invert_dict(word_dictionary)
@@ -15,4 +15,4 @@ def invert_dict(word_dictionary):
       inverse.setdefault(val,keys)   
     print (inverse)
 
-search_key(fil)
+dictionary(fil)
